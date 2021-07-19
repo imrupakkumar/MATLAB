@@ -86,6 +86,9 @@ Z1 = [X;Y] % concatenating in column
 %Forming a matrix by concatenation of arrays
  A = [1:2:9; 2:2:10; 11:-2:3; 3:7]
  
+ %gives a row vector from 1 to 4 with a step size of 0.5
+ X = [1:0.5:4]
+ 
  %%Adding extra elements (rows/columns) to a given matrix
  a1 = [7,8,9
      4,5,6]
