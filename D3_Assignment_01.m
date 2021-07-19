@@ -21,6 +21,13 @@ sum(S)
 m=magic(5);
 Diagonal= m(1:6:25)
 
+% Extract a diagonal of a square nxn matrix using linear indexing without using inbuilt command.
+% dimension is given is by input
+
+n= input ("Enter dimension of Matrix :")
+m = magic(n);
+Diagonal = m(1:n+1:n*n)
+
 %Create a random matrix of 1x100. Change the elements to 0 which are smaller than 0.33 and 1 which are greater than 0.33 and smaller than 0.67 and 2 which are greater than 0.67
 p=rand(1,100);
 p(p<0.33)=0
