@@ -21,3 +21,19 @@ if rem(y,4)==0
 else
     disp("Not a Leap Year")
 end
+
+%%%% Switch %%%%
+choice = input("Press 1 For Circle\nPress 2 For Rectangle")
+switch(choice)
+    case 1
+        r = input("Enter radius of the Circle");
+        area = pi*r^2;
+        disp("area of the Circle")
+        disp(area)
+    case 2
+        l = input("length of the rectangle")
+        b = input("bredth of the rectangle")
+        Area = l*b;
+        disp("area of the rectangle")
+        disp(Area)
+end
