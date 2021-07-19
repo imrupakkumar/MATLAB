@@ -26,3 +26,12 @@ p=rand(1,100);
 p(p<0.33)=0
 p(p>0.67)=2
 p(p>0.33 & p<0.67)=1
+
+%%%
+A=[1 2 0 6 4 0 2];
+%Get a B vector such that B=[1 ½ 0 1/6 ¼ 0 ½], i.e. reverse the elements which are not 0
+B = 1./A;
+B(A==0) = 0
+
+%or we can write 
+B(A~=0) = 1./A(A~=0)
