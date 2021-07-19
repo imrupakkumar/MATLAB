@@ -36,4 +36,6 @@ switch(choice)
         Area = l*b;
         disp("area of the rectangle")
         disp(Area)
+    otherwise
+        disp("Invalid Choice")
 end
