@@ -56,3 +56,12 @@ if x==1
 else
     disp("It is a prime Number")
 end
+
+% Find factor of a Number %
+n = input("Enter a number")
+fprintf('factor of %d are\n',n)
+for d=2:n/2
+    if rem(n,d)==0
+        disp(d)
+    end
+end
