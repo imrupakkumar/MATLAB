@@ -39,3 +39,20 @@ switch(choice)
     otherwise
         disp("Invalid Choice")
 end
+
+%% Enter a number to check Prime or Non-Prime %%
+n = input("Enter a number to check prime number...");
+x=0;
+for d=2:n/2
+    if rem(n,d)==0
+        x=1;
+        break;
+    else
+        x=0;
+    end
+end
+if x==1
+    disp("Not a prime Number")
+else
+    disp("It is a prime Number")
+end
