@@ -75,3 +75,18 @@ for n=1:10
         end
     end
 end
+
+% Sumation of input numbers in which -ve numbers are skipped %
+clc;
+s=0;
+for i=1:inf
+    n=input("Enter a number");
+    if n<0;
+        continue %(-ve numvers will not be added)
+    end
+    s=s+n;
+    if n==0;
+        break; %(When we enter 0 addition will stop and result appears)
+    end
+end
+fprintf("sum=%d",s)
