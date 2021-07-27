@@ -65,3 +65,13 @@ for d=2:n/2
         disp(d)
     end
 end
+
+% Factor of all the numbers between 1 to 10 %
+for n=1:10
+    fprintf('factors of %d is\n',n);
+    for d=2:n/2
+        if rem(n,d)==0
+            disp(d)
+        end
+    end
+end
