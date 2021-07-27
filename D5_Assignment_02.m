@@ -13,3 +13,10 @@ if x==0
     disp(n)
 end
 end
+
+% Calculate the sum of first 10 terms of the series 
+% Xn = 1/(n^2) from n=1 to 10
+n=1:10;
+X = 1./(n.^2);
+s = sum(X);
+disp(s)
