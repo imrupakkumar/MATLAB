@@ -12,7 +12,6 @@ function [I] = inti(p) % save the file with the name of inti.m in matlab
     m=degree:-1:0;
     I= p./(m+1);
     k=0; % Assuming constant = 0
-    I=[I k];
-    disp(I)
+    I=[I k];  
 end
 
