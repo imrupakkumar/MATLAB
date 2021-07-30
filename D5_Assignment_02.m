@@ -45,6 +45,7 @@ function out = random_values(a,b,m,n) % Save the file with the name of (random_v
     out = a+(b-a)*rand(m,n);
 end
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Make a function which takes two inputs a and b and outputs two variable x and y.
 % x is the addition of two variable a and b and y is the multiplication of a and b.
 
@@ -55,3 +56,4 @@ end
 
 % in script file write for output x and y
 [x,y]=arithmatic_op(2,5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
