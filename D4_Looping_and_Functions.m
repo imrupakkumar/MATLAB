@@ -90,3 +90,19 @@ for i=1:inf
     end
 end
 fprintf("sum=%d",s)
+
+% Write a program to generate factorial of a number And break the loop as soon as factorial cross 1000.
+% Print the current number for which factorial crosses 1000.
+
+for i=0:inf
+    f=1;
+    for j=i:-1:1
+        f=f*j;
+    end
+    if f>1000
+        fprintf("factorial of %d is %d",i,f)
+        break
+    else
+        fprintf("factorial of %d is %d\n",i,f)
+    end
+end
