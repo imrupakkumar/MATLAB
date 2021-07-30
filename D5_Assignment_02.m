@@ -57,3 +57,19 @@ end
 % in script file write for output x and y
 [x,y]=arithmatic_op(2,5)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Trianle Check either Acute/Obtuse or right angle triangle
+% c > a & b always for the check
+
+function out = triangle_type(a,b,c) % Save the file with the name of (triangle_type.m)
+    if (b+c>a) || (a+c)>b || (a+b)>c
+        if c^2 < a^2 +b^2
+            out = "Acute angle Triangle";
+        elseif c^2 == a^2 +b^2
+            out = "Right Angle Triangle";
+        elseif c^2 > a^2 +b^2
+            out = "Obtuse Angle Triangle";   
+        end
+    else
+        disp("Triangle is not Valid")
+end
